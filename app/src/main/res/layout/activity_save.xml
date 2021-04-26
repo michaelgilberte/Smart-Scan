@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alwaysDrawnWithCache="false"
+    android:animateLayoutChanges="false"
+    android:animationCache="false"
+    android:background="@color/greyBrown"
+    tools:context=".Save">
+
+    <CheckBox
+        android:id="@+id/cbSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Save in my File"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSave" />
+
+    <CheckBox
+        android:id="@+id/cbShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Share"
+        app:layout_constraintStart_toStartOf="@+id/cbSave"
+        app:layout_constraintTop_toBottomOf="@+id/cbSave" />
+
+    <TextView
+        android:id="@+id/tvSave"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@color/greenProject"
+        android:paddingTop="15dp"
+        android:text="Save My Scan"
+        android:textAlignment="center"
+        android:textColor="@color/brownText"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPdf"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/greenProject"
+        android:text="PDF"
+        android:textColor="@color/brownText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvChoose" />
+
+    <Button
+        android:id="@+id/btnWord"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/greenProject"
+        android:drawableLeft="@mipmap/word"
+        android:text="Word"
+        android:textColor="@color/brownText"
+        app:layout_constraintStart_toStartOf="@+id/btnPdf"
+        app:layout_constraintTop_toBottomOf="@+id/btnPdf" />
+
+    <Button
+        android:id="@+id/btnOpen"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/greenProject"
+        android:text="Open Document"
+        android:textColor="@color/brownText"
+        app:layout_constraintEnd_toEndOf="@+id/btnPdf"
+        app:layout_constraintStart_toStartOf="@+id/btnWord"
+        app:layout_constraintTop_toBottomOf="@+id/btnWord" />
+
+    <Button
+        android:id="@+id/btnBlocnote"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/greenProject"
+        android:text="Blocnote"
+        android:textColor="@color/brownText"
+        app:layout_constraintEnd_toEndOf="@+id/btnOpen"
+        app:layout_constraintStart_toStartOf="@+id/btnOpen"
+        app:layout_constraintTop_toBottomOf="@+id/btnOpen" />
+
+    <ImageView
+        android:id="@+id/ivBackgroundSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536"
+        app:srcCompat="@drawable/scan" />
+
+    <TextView
+        android:id="@+id/tvChoose"
+        android:layout_width="180dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="70dp"
+        android:text="Choose your format"
+        android:textColor="@color/brownText"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbShare" />
+
+    <ImageButton
+        android:id="@+id/btnReturnPreview"
+        android:layout_width="104dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/greenProject"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="229dp"
+        android:layout_height="41dp"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="257dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="12dp"
+        android:hint="hint"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbShare" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

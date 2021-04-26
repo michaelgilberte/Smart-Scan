@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyBrown"
+    tools:context=".Share">
+
+    <ImageView
+        android:id="@+id/ivBackgroundCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/scan" />
+
+    <TextView
+        android:id="@+id/tvShare"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@color/greenProject"
+        android:paddingTop="15dp"
+        android:text="Share My Scan"
+        android:textAlignment="center"
+        android:textColor="@color/brownText"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnReturnSave"
+        android:layout_width="104dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/greenProject"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <Button
+        android:id="@+id/btnGmail"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@color/greenProject"
+        android:drawableLeft="@mipmap/jeveux"
+        android:text="Gmail"
+        android:textColor="@color/brownText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvShare" />
+
+    <Button
+        android:id="@+id/btngoogleDrive"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/greenProject"
+        android:drawableLeft="@mipmap/googled"
+        android:text="GoogleDrive"
+        android:textColor="@color/brownText"
+        app:layout_constraintStart_toStartOf="@+id/btnGmail"
+        app:layout_constraintTop_toBottomOf="@+id/btnGmail" />
+
+    <Button
+        android:id="@+id/btnInstagram"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/greenProject"
+        android:drawableLeft="@mipmap/insta"
+        android:text="Instagram"
+        android:textColor="@color/brownText"
+        app:layout_constraintStart_toStartOf="@+id/btngoogleDrive"
+        app:layout_constraintTop_toBottomOf="@+id/btngoogleDrive" />
+
+    <Button
+        android:id="@+id/btnFacebook"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/greenProject"
+        android:drawableLeft="@mipmap/faceb"
+        android:text="FaceBook"
+        android:textColor="@color/brownText"
+        app:layout_constraintStart_toStartOf="@+id/btnInstagram"
+        app:layout_constraintTop_toBottomOf="@+id/btnInstagram" />
+
+    <Button
+        android:id="@+id/btnLinkedIn"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/greenProject"
+        android:drawableLeft="@mipmap/linkd"
+        android:text="LinkedIn"
+        android:textColor="@color/brownText"
+        app:layout_constraintStart_toStartOf="@+id/btnFacebook"
+        app:layout_constraintTop_toBottomOf="@+id/btnFacebook" />
+
+    <Button
+        android:id="@+id/btnWhatsApp"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/greenProject"
+        android:drawableLeft="@mipmap/whatapp"
+        android:text="WhatsApp"
+        android:textColor="@color/brownText"
+        app:layout_constraintStart_toStartOf="@+id/btnLinkedIn"
+        app:layout_constraintTop_toBottomOf="@+id/btnLinkedIn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
